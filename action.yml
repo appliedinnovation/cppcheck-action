@@ -5,12 +5,11 @@ branding:
   icon: alert-circle
   color: green
 inputs:
-  path:
-    description: 'Project Directory'
-    required: false
-    default: '.'
+  hash:
+    description: 'Hash of the Pull request commit'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.path }}
+    - ${{ inputs.hash }}
