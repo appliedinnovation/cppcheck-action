@@ -9,13 +9,8 @@ inputs:
     description: 'Project Directory'
     required: false
     default: '.'
-  opts:
-    description: 'Any additional cppcheck flags or options'
-    required: false
-    default: '--enable=all'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.path }}
-    - ${{ inputs.opts }}
