@@ -1,6 +1,6 @@
 name: CPPCheck-annotations
 description: Automatically checks pull requests changes with cppcheck and prints the results as GitHub annotations
-author: tonybaloney
+author: p-ranav
 branding:
   icon: alert-circle
   color: green
