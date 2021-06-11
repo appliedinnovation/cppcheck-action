@@ -2,6 +2,7 @@
 
 git fetch origin master 
 git checkout master
+git fetch origin $1
 git checkout $1
 echo "Performing cppcheck"
 COMMIT=$1
