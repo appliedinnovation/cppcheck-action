@@ -14,4 +14,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -qq -y install curl cmake jq clang cp
 ADD runchecks.sh /entrypoint.sh
 COPY . .
 RUN chmod +x /entrypoint.sh
-ENTRYPOINT /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
