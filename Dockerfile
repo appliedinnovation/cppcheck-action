@@ -9,7 +9,7 @@ LABEL repository="https://github.com/appliedinnovation/cppcheck-action"
 
 WORKDIR /build
 RUN apt-get update
-RUN apt-get -qq -y install curl cmake jq clang cppcheck
+RUN apt-get -qq -y install curl cmake jq clang cppcheck git
 
 ADD runchecks.sh /entrypoint.sh
 COPY . .
