@@ -5,7 +5,7 @@ LABEL com.github.actions.description="Lint your code with cppcheck"
 LABEL com.github.actions.icon="code"
 LABEL com.github.actions.color="gray-dark"
 
-LABEL repository="https://github.com/tonybaloney/cppcheck-action"
+LABEL repository="https://github.com/appliedinnovation/cppcheck-action"
 
 WORKDIR /build
 RUN apt-get update
