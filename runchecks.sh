@@ -16,5 +16,5 @@ FILES=`cat changes.txt | grep *.cpp`
 echo $FILES
 
 if [ -n "$FILES" ]; then
-    cppcheck -v --enable=all --language=c++ --template="::{severity} file={file},line={line},col={column}::{message}" --error-exitcode=1 $FILES
+    cppcheck -v --enable=all --suppress=missingIncludeSystem --language=c++ --template="::{severity} file={file},line={line},col={column}::{message}" --error-exitcode=1 $FILES
 fi
