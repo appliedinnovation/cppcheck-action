@@ -12,7 +12,7 @@ inputs:
   opts:
     description: 'Any additional cppcheck flags or options'
     required: false
-    default: '--enable=warning'
+    default: '--enable=all'
 runs:
   using: 'docker'
   image: 'Dockerfile'
