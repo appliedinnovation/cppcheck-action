@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: c-linter
-        uses: tonybaloney/cppcheck-action@master
+        uses: appliedinnovation/cppcheck-action@master
 ```
 
 Additional options:
